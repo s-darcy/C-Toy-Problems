@@ -6,16 +6,18 @@ namespace MediumToyProblem
     {
         public static void Main(string[] args)
         {
-            char[] starArray = new char[10];
-
-            for (var i = 0; i <= 9; i++)
+            char[][] fiveLines = new char[5][];
+            for (var j = 0; j < 5; j++)
             {
-                char star = '*';
-                starArray[i] = star;
-                
+                char[] starArray = new char[10];
+                for (var i = 0; i <= 9; i++)
+                {
+                    char star = '*';
+                    starArray[i] = star;
+                    
+                }
+                Console.WriteLine(starArray);
             }
- 
-            Console.WriteLine(starArray);
         }
     }
 }
