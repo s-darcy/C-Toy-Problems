@@ -13,17 +13,16 @@ namespace HardToyProblem2
             Console.WriteLine("How many rows?");
             int numberOfRows = Int32.Parse(Console.ReadLine());
             int totalRows = numberOfRows;
-            int count = 1;
 
             for (int row = 1; row <= totalRows; row++)
             {
                 for(int j = totalRows - row; j >= 1; j--)
                 {
-                    Console.Write(" ");
+                    Console.Write(space);
                 }
                 for (int k = 1; k <= (row*2)-1; k++)
                 {
-                    Console.Write("*");
+                    Console.Write(star);
                 }
                 Console.WriteLine();
             }
