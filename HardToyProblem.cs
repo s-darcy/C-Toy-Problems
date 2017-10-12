@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace HardToyProblem2
@@ -8,17 +9,23 @@ namespace HardToyProblem2
         static void Main(string[] args)
         {
             char star = '*';
-            int numberOfRows = 6;
-            StringBuilder builder = new StringBuilder();
+            char space = ' ';
+            Console.WriteLine("How many rows?");
+            int numberOfRows = Int32.Parse(Console.ReadLine());
+            int totalRows = numberOfRows;
+            int count = 1;
 
-            string[] starArray = new string[numberOfRows];
-            for (var i = 0; i <= numberOfRows; i++)
+            for (int row = 1; row <= totalRows; row++)
             {
-                var stars = builder.Append(i).Append(star, 2);
-                
-                
-                Console.WriteLine(stars);
-                
+                for(int j = totalRows - row; j >= 1; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int k = 1; k <= (row*2)-1; k++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
             }
         }
     }
