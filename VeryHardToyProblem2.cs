@@ -31,19 +31,19 @@ namespace VeryHardToyProbem2
             {
                 case 'I':
                     double centimeters = intVal * 2.54;
-                    Console.WriteLine(centimeters);
+                    Console.WriteLine(centimeters + "cm");
                     break;
                 case 'G':
-                    double gallons = intVal * 3.785;
-                    Console.WriteLine(gallons);
+                    double liters = intVal * 3.785;
+                    Console.WriteLine(liters + "L");
                     break;
                 case 'M':
-                    double miles = intVal * 1.609;
-                    Console.WriteLine(miles);
+                    double kilometers = intVal * 1.609;
+                    Console.WriteLine(kilometers + "km");
                     break;
                 case 'P':
-                    double pound = intVal * 0.4535;
-                    Console.WriteLine(pound);
+                    double kilogram = intVal * 0.4535;
+                    Console.WriteLine(kilogram + "kg");
                     break;
                 default:
                     Console.WriteLine("Invalid letter. Please type: I, G, M, or P");
