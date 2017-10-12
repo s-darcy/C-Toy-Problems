@@ -1,19 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace VeryHardToyProblem
+namespace VeryHardToyProbem2
 {
     class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine(
-               "Need help converting a unit of measurement?\r\n" +
-               "Please type the one of the following letters below and then type your number to convert.\r\n" +
-               "'I' to convert from inches to centimeters.\r\n" +
-               "'G' tp convert from gallons to liters.\r\n" +
-               "'M' to convert from mile to kilometer.\r\n" +
-               "'P' to convert from pound to kilogram.\r\n"
-                );
+              "Need help converting a unit of measurement?\r\n" +
+              "Please type the one of the following letters below and then type your number to convert.\r\n" +
+              "'I' to convert from inches to centimeters.\r\n" +
+              "'G' tp convert from gallons to liters.\r\n" +
+              "'M' to convert from mile to kilometer.\r\n" +
+              "'P' to convert from pound to kilogram.\r\n"
+               );
 
             Console.Write("Please enter a letter: ");
             string letter = Console.ReadLine();
@@ -22,7 +26,7 @@ namespace VeryHardToyProblem
 
             char charLetter = Convert.ToChar(letter);
             int intVal = Int32.Parse(value);
-            
+
             switch (charLetter)
             {
                 case 'I':
@@ -38,7 +42,7 @@ namespace VeryHardToyProblem
                     Console.WriteLine(miles);
                     break;
                 case 'P':
-                    double pound = intVal * 0.4535; 
+                    double pound = intVal * 0.4535;
                     Console.WriteLine(pound);
                     break;
                 default:
@@ -48,3 +52,4 @@ namespace VeryHardToyProblem
         }
     }
 }
+
